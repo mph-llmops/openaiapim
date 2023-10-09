@@ -21,7 +21,7 @@ steps:
   - task: AzureCLI@2
     displayName: Provision Infrastructure
     inputs:
-      azureSubscription: azconnection
+      azureSubscription: openaiapim
       scriptType: bash
       scriptLocation: inlineScript
       inlineScript: |
@@ -34,7 +34,7 @@ steps:
   - task: AzureCLI@2
     displayName: Deploy Application
     inputs:
-      azureSubscription: azconnection
+      azureSubscription: openaiapim
       scriptType: bash
       scriptLocation: inlineScript
       inlineScript: |
