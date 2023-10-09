@@ -27,7 +27,7 @@ steps:
       inlineScript: |
         azd provision --no-prompt
     env:
-      AZURE_SUBSCRIPTION_ID: $(AZURE_SUBSCRIPTION_ID)
+      AZURE_SUBSCRIPTION_ID: '6e977b0d-998c-42d7-97ed-dd70040cff12'
       AZURE_ENV_NAME: $(AZURE_ENV_NAME)
       AZURE_LOCATION: $(AZURE_LOCATION)
       
@@ -40,6 +40,6 @@ steps:
       inlineScript: |
         azd deploy --no-prompt
     env:
-      AZURE_SUBSCRIPTION_ID: $(AZURE_SUBSCRIPTION_ID)
+      AZURE_SUBSCRIPTION_ID: '6e977b0d-998c-42d7-97ed-dd70040cff12'
       AZURE_ENV_NAME: $(AZURE_ENV_NAME)
       AZURE_LOCATION: $(AZURE_LOCATION)
